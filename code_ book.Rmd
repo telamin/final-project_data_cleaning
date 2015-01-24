@@ -1,0 +1,40 @@
+---
+output: html_document
+---
+##title: code book ...     by : Tarig  ....     Winter 2015
+
+#### Getting and Cleaning Data Course Final Project **********
+
+#### This code book -as a good habit for a data scientist to have when working on an analytical
+
+#### project by some sort- tries to describe the variables/columns, data, and transformations
+
+#### done to in order to clean up the data and make it ready to next stage of the analytical
+
+#### project.    ***************************************************************************
+
+#### The data was obtained from: http://archive.ics.uci.edu/ml/datasets/Human+Activity+
+
+#### Recognition+Using+Smartphones The data used for the project
+ 
+#### https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+###  What have done is
+
+#### 1.A downloaded the data and a local directory created-see the R program accompanied-and
+
+#### unzipped and then we read the data
+
+#### 2.B  The test and train data were merged together
+
+#### 3.C Columns with mean() and std() were retained. All other columns were discarded
+
+#### 4.D  The mean() and std() columns were averaged over all participants and activities
+
+#### 5.E 4.  This averaging was accomplished using the melt and dcast functions from the
+
+#### reshape2 library. The resulting tidy dataset contains one row for each unique combination
+
+#### of participant and activity.
+
+#### ***************************************************************************************
